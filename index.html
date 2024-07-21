@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="hero">
-        <p class="hero-text" >Hi, I'm Kevin Gu. </p>
+        <p class="hero-text" >Hi, I'm Kevin Gu </p>
 
         <p class="hero-subtext">
         A UBC student studying business and computer science</p>
@@ -20,23 +20,84 @@
             <a target="_blank" href="https://github.com/Kevinxygu"><i class="fa-brands fa-github"></i></a>
         </div>
         <p class="activites-title">Work Experiences</p>
-        <!-- <p class="activites-subtext">Easter egg! :)</p> -->
+        <p class="activites-subtext">Easter egg! :)</p>
         <div class="logos-grid">
             <div class="image-container">
-                <a target="_blank" href="https://www.trulioo.com/" ><img class='logo' src="assets/Trulioo.png" alt="Kevin Gu Trulioo" style="--background-color: #a5dcb4;"></a>
+                <a target="_blank" href="https://www.trulioo.com/" ><img class='logo' src="assets/Trulioo.png" alt="Kevin Gu Trulioo" style="--background-color: #a5dcb4;" data-flavour-text="🤝 Solutions Engineer / Solutions Consultant Intern @ Trulioo"></a>
             </div>
             <div class="image-container">
-                <a target="_blank" href="https://www.icbc.com/" ><img class='logo' src="assets/ICBC.webp" alt="Kevin Gu ICBC Insurance Corporation of British Columbia" style="--background-color: #b6d0ec;"></a>
+                <a target="_blank" href="https://www.icbc.com/" ><img class='logo' src="assets/ICBC.webp" alt="Kevin Gu ICBC Insurance Corporation of British Columbia" style="--background-color: #b6d0ec;" data-flavour-text="💻 Software Engineer + 📊 Business Systems Analyst Co-op @ ICBC"></a>
             </div>
             <div class="image-container">
-                <a target="_blank" href="https://www.cyberiumgroup.com/" ><img class='logo' src="assets/Cyberium (1).png" alt="Kevin Gu Cyberium Group Cybersecurity" style="--background-color: #9bcafc;"></a>
+                <a target="_blank" href="https://www.cyberiumgroup.com/" ><img class='logo' src="assets/Cyberium (1).png" alt="Kevin Gu Cyberium Group Cybersecurity" style="--background-color: #9bcafc;" data-flavour-text="👾 Software Engineer Intern @ Cyberium Group"></a>
             </div>
             <div class="image-container">
-                <a target="_blank" href="https://www.nnect.ca/" ><img class='logo' src="assets/NNECT.png" alt="Kevin Gu NNECT software engineer" style="--background-color: #92e8cf;"></a>
+                <a target="_blank" href="https://www.nnect.ca/" ><img class='logo' src="assets/NNECT.png" alt="Kevin Gu NNECT software engineer" style="--background-color: #92e8cf;" data-flavour-text="🍕 Software Engineer (Part-Time) @ NNECT"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.sauder.ubc.ca/" ><img class='logo' src="assets/Sauder.png" alt="Kevin Gu COMM 190 Sauder teaching assistant" style="--background-color: #9fefe0;" data-flavour-text="📖 COMM 190 TA: Quantitative Decision Analysis & Probability @ UBC Sauder"></a>
             </div>
         </div>
-        <!-- #92e8cfff -->
+
+        <p class="activites-title" style="margin-top: 40px;">Community Involvement</p>
+        <p class="club-activites-subtext">Easter egg! :)</p>
+        <div class="logos-grid">
+            <div class="image-container">
+                <a target="_blank" href="https://nwplus.io/" ><img class='club-logo' src="assets/nwPlus.png" alt="Kevin Gu nwPlus Hackathon club" style="--background-color: #2c2543;" data-flavour-text="💰 Sponsorship Lead @ nwPlus (MLH-Affiliated Hackathons)"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.enactusubc.ca/" ><img class='club-logo' src="assets/EnactusIcon.png" alt="Kevin Gu Cyberium Group Cybersecurity" style="--background-color: #29476D;" data-flavour-text="🧑‍💻 Tech Lead @ Enactus UBC Social Entrepreneurship Club"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.thenscc.com/" ><img class='club-logo' src="assets/NSCC.png" alt="Kevin Gu ICBC Insurance Corporation of British Columbia" style="--background-color: #b6d0ec;" data-flavour-text="💼 Conference Associate @ NSCC Case Competition"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.ubcesports.ca/" ><img class='club-logo' src="assets/UBCEA.webp" alt="Kevin Gu NNECT software engineer" style="--background-color: #3f91d3;" data-flavour-text="🎮 Software Developer + External Relations Exec @ UBC Esports Association"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.ubcsauderspark.com/" ><img class='club-logo' src="assets/ubc-logo.png" alt="Kevin Gu NNECT software engineer" style="--background-color: #ecd880;" data-flavour-text="⭐️ UBC Sauder Spark Orientation Leader @ UBC"></a>
+            </div>
+            <div class="image-container">
+                <a target="_blank" href="https://www.cus.ca" ><img class='club-logo' src="assets/CUS.png" alt="Kevin Gu bucs commerce undergraduate society" style="--background-color: #91def2;" data-flavour-text="🎤 Prev. BUCS Chair @ UBC Commerce Undergraduate Society"></a>
+            </div>
+        </div>
     </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const logos = document.querySelectorAll('.logo');
+            const activitesSubtext = document.querySelector('.activites-subtext');
+
+            logos.forEach(logo => {
+                logo.addEventListener('mouseover', function () {
+                    activitesSubtext.style.visibility = 'visible';
+                    activitesSubtext.textContent = this.getAttribute('data-flavour-text');
+                });
+
+                logo.addEventListener('mouseout', function () {
+                    activitesSubtext.style.visibility = 'hidden';
+                    activitesSubtext.textContent = 'Easter egg!';
+                });
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const logos = document.querySelectorAll('.club-logo');
+            const activitesSubtext = document.querySelector('.club-activites-subtext');
+
+            logos.forEach(logo => {
+                logo.addEventListener('mouseover', function () {
+                    activitesSubtext.style.visibility = 'visible';
+                    activitesSubtext.textContent = this.getAttribute('data-flavour-text');
+                });
+
+                logo.addEventListener('mouseout', function () {
+                    activitesSubtext.style.visibility = 'hidden';
+                    activitesSubtext.textContent = 'Easter egg!';
+                });
+            });
+        });
+    </script>
     
 </body>
 </html>

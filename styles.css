@@ -79,6 +79,7 @@ body {
     max-width: 60px;
     transition: 0.3s ease;
     cursor: pointer;
+    transform-origin: center; /* Ensure the transformation scales from the center */
 }
 
 .logo:hover {
@@ -89,12 +90,35 @@ body {
 
 .activites-title {
     color: #ffffff;
-    margin: 20px 0px;
-    font-size: 15px;
+    margin: 10px 0px;
+    font-size: 20px;
 }
 
 .activites-subtext {
-    color: #ffffff;
-    margin: 20px 0px;
+    color: #a8a8a8;
+    margin: 10px 0px;
     visibility: hidden;
+    font-size: 15px;
+}
+
+.club-logo {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 40px;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transform-origin: center; /* Ensure the transformation scales from the center */
+}
+
+.club-logo:hover {
+    background-color: var(--background-color, #CCCCCC);
+}
+
+.club-activites-subtext {
+    color: #a8a8a8;
+    margin: 10px 0px;
+    visibility: hidden;
+    font-size: 15px;
 }
