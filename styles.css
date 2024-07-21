@@ -58,3 +58,43 @@ body {
     color: #5EEFCC;
     transform: translateY(-5px);
 }
+
+.logos-grid {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.image-container {
+    position: relative; 
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.logo {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 60px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.logo:hover {
+    transform: translateY(-5px);
+    background-color: var(--background-color, #CCCCCC);
+    max-width: 80px;
+}
+
+.activites-title {
+    color: #ffffff;
+    margin: 20px 0px;
+    font-size: 15px;
+}
+
+.activites-subtext {
+    color: #ffffff;
+    margin: 20px 0px;
+    visibility: hidden;
+}
