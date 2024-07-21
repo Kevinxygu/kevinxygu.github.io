@@ -14,7 +14,7 @@ html, body {
 body {
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 39px;
 }
 
 .hero {
@@ -119,6 +119,7 @@ body {
     color: #a8a8a8;
     visibility: hidden;
     font-size: 15px;
+    margin: 10px;
 }
 
 /* Media query for smaller screens */
