@@ -86,7 +86,7 @@ body {
     background-color: var(--background-color, #CCCCCC);
     max-width: 70px;
 }
-
+x
 .activites-title {
     color: #ffffff;
     font-size: 20px;
@@ -120,6 +120,10 @@ body {
     visibility: hidden;
     font-size: 12px;
     margin: 10px;
+}
+
+#NSCC:hover {
+    filter: invert(1);
 }
 
 /* Media query for smaller screens */
